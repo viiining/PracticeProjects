@@ -1,4 +1,4 @@
-$themeColor: #02fa;
+$themeColor: #02f5;
 
 * {
   padding: 0;
@@ -25,6 +25,10 @@ body {
     left: 0;
   }
   header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 10px 10px 20px #0002;
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
@@ -199,4 +203,25 @@ body {
       }
     }
   }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $themeColor;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #08fa;
 }

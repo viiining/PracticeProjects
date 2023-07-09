@@ -26,6 +26,10 @@ body .fixedImg {
   left: 0;
 }
 body header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1333333333);
   background-color: #fff;
   display: flex;
   flex-wrap: wrap;
@@ -62,8 +66,8 @@ body header nav ul li a {
   padding-bottom: 0.2em;
 }
 body header nav ul li a:hover {
-  color: rgba(0, 34, 255, 0.6666666667);
-  border-bottom: 5px dotted rgba(0, 34, 255, 0.6666666667);
+  color: rgba(0, 34, 255, 0.3333333333);
+  border-bottom: 5px dotted rgba(0, 34, 255, 0.3333333333);
 }
 body header nav ul li a i {
   vertical-align: middle;
@@ -121,7 +125,7 @@ body main .infoCircles .circleList .circle img {
   padding: 8px;
 }
 body main .infoCircles .circleList .circle img:hover {
-  border: 5px dotted rgba(0, 34, 255, 0.6666666667);
+  border: 5px dotted rgba(0, 34, 255, 0.3333333333);
 }
 body main .bgContainer {
   min-height: 70vh;
@@ -187,4 +191,25 @@ body footer section.links img {
   body header nav ul li {
     padding: 10px;
   }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 34, 255, 0.3333333333);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 136, 255, 0.6666666667);
 }/*# sourceMappingURL=style.css.map */
